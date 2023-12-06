@@ -4,8 +4,7 @@ import Footer from './Footer';
 
 const InnerPageComponent = () => {
   useEffect(() => {
-    // Add any JavaScript functionality that needs to be converted to React
-    // For example, initialize AOS, Bootstrap components, etc.
+
   }, []);
 
   return (

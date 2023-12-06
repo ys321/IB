@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import IndexPage from './Pages/IndexPage';
 import InnerPage from './Pages/InnerPage';
+import PortfolioDetails from './Pages/PortfolioDetails';
 // import
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
         <Route >
           <Route path="/" element={<IndexPage />} />
           <Route path="/InnerPage" element={<InnerPage />} />
+          <Route path="/PortfolioDetails" element={<PortfolioDetails />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

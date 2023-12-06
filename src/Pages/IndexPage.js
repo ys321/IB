@@ -13,7 +13,15 @@ import Testimonials from '../Components/Testimonials';
 import Team from '../Components/Team';
 import Contact from '../Components/Contact';
 import Footer from '../Components/Footer';
+import BackToTop from 'react-back-to-top-button';
+import { Link } from 'react-router-dom';
 
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // Optional, smooth scrolling animation
+  });
+};
 
 const select = (el, all = false) => {
   el = el.trim();
@@ -77,12 +85,13 @@ const IndexPage = () => {
       </main>
       {/* End #main */}
       <Footer />
-      <a
-        href="#"
-        className="back-to-top d-flex align-items-center justify-content-center"
-      >
-        <i className="bi bi-arrow-up-short" />
-      </a>
+        <Link onClick={scrollToTop}
+          className="back-to-top d-flex align-items-center justify-content-center"
+        >
+          <i className="bi bi-arrow-up-short" />
+        </Link>
+      <BackToTop showAt={100} speed={1500} easing="easeInOutQuint">
+      </BackToTop>
 
     </div>
   );

@@ -6,7 +6,7 @@ const Header = () => {
         <header id="header" className="fixed-top">
             <div className="container d-flex align-items-center justify-content-between position-relative">
                 <div className="logo">
-                    <a href="index.html">
+                    <a href="#">
                         <img src={logoImg} alt="" className="img-fluid" />
                     </a>
                 </div>
